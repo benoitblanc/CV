@@ -1,0 +1,232 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+
+% mwe-xelatex.cls
+% 
+% Copyright 2017 Olivier Pieters
+%
+% This is a MWE of the `limecv' class that showcases its features 
+% and sane packages to load. This MWE assumes that the XeLaTeX 
+% compiler is used. It might be necessary to manually specify the 
+% font path for FontAwesome if recent symbols are used.
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Olivier Pieters.
+% Contact the maintainer at: me (at) olivierpieters (dot) be. 
+
+
+\documentclass[a4paper]{limecv}
+
+% Defaults used in template design.
+\usepackage[margin=\cvMargin,noheadfoot]{geometry}
+
+% For cover letter.
+\usepackage{lipsum}
+
+% Encoding
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+%\cvSetColor{green} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+%\cvSetColor{orange} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+%\cvSetColor{red} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+%\cvSetColor{blue} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+%\cvSetColor{gray} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+%\cvSetColor{graygreen} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+%\cvSetColor{grayorange} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+%\cvSetColor{grayred} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+%\cvSetColor{grayblue} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+%\cvSetColor{graybluelight} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+\cvSetColor{grayblue} % `green', `orange', `red', `blue', `gray', `graygreen', `grayorange', `grayred' and `grayblue' are valid options
+
+% Design of side bar.
+\begin{cvSidebar}
+  \cvID{Benoît}{Blanc}{picture}{Etudiant \\Master Géographies Numériques}%{Développeur Informatique}
+
+  \begin{cvProfile}
+	Après plusieurs années d'expérience dans le développement logiciel, j'ai décidé de reprendre mes études en effectuant le Master Géographies Numériques. J'ai pour objectif de me spécialiser dans le développement SIG.\\Aujourd'hui, je suis à la recherche d'un stage de 6 mois dans le cadre de ma deuxième année à partir de mars 2020.
+%co-accrédité par l'Université Jean Monnet de Saint Etienne, l'Université Lyon 2 et l'ENS de Lyon
+	%Après plusieurs années d'expérience dans le développement logiciel pour des appareils de mesures scientifiques à destination des laboratoires de Recherche fondamentale, je souhaite découvrir de nouvelles technologies et me spécialiser.\\Je candidate aujourd'hui au Master Géographies Numériques, afin d'acquérir les compétences nécessaires pour poursuivre ma carrière dans le développement SIG qui réunit deux domaines que j'affectionne : l'informatique et la géographie.
+	%Développeur depuis huit ans au sein de l'entreprise Teclis, j'ai eu la possibilité d'acquérir les compétences nécessaires à la conception et au développement de logiciels pour appareils de mesure dans des laboratoires.\\Je souhaite à présent découvrir de nouvelles technologies, notamment les logiciels cartographiques. C'est pourquoi je reprends mes études afin d'acquérir de nouvelles compétences dans le but de poursuivre ma carrière dans le développement SIG.
+%    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper euismod lorem nec eleifend. Suspendisse ac varius quam. Etiam laoreet nunc orci, vestibulum imperdiet enim elementum at. Duis dictum metus sapien, eu blandit quam malesuada et. Ut viverra maximus eros.
+  \end{cvProfile}
+  
+  \begin{cvContact}
+    \cvContactBirth{11 mai 1990}
+    \cvContactAddress{30 Impasse du Canet\\Le Canet\\69770 Longessaigne}
+    \cvContactEmail{mailto:benoitblanc@live.com}{benoitblanc@live.com}
+    \cvContactPhone{+33 6 71 48 98 49}
+    %\cvContactWebsite{https://doe.tld}{doe.tld}
+    \cvContactLinkedin{https://www.linkedin.com/in/blancbenoit/}{/in/blancbenoit}
+    %\cvContactTwitter{https://twitter.com/johndoe}{@johndoe}
+    %\cvContactKeybase{https://keybase.io/johndoe}{\texttt{AAAA 5555 BBBB FFFF}}
+    \cvContactDrivingLicense{Permis B}
+  \end{cvContact}
+  
+  \begin{cvLanguages}
+    %\cvLanguage{Français}{langue\\maternelle}%{5}
+    \cvLanguage{Anglais}{compétences\\professionnelles}%{3}
+    \cvLanguage{Espagnol}{notions}%{2}
+  \end{cvLanguages}
+  
+  \begin{cvInterests}%[short]
+    %\cvInterestsPersonal
+    \cvInterest{\faUsers}{Membre du\\Conseil Municipal\\de Longessaigne}
+    \cvInterest{\faSoccerBallO}{Football}
+    %\cvInterest{\faTrain}{model trains}
+    %\cvInterest{\faGamepad}{Jeux vidéos}
+    %\cvInterest{\faSuitcase}{Voyages}
+    %\cvInterestsProfessional
+    %\cvInterest{\faFilm}{film}
+    %\cvInterest{\faCamera}{Photographie}
+  \end{cvInterests}
+  
+  %\begin{cvProjects}
+    %\cvProject[image=limecv-icon,width=1cm,link=https://github.com/opieters/limecv]{\texttt{limecv}}{A \LaTeX\ CV document class.}
+  %\end{cvProjects}
+  
+\end{cvSidebar}
+
+\begin{cvMainContent}
+
+  \begin{cvEducation}
+    \cvItem{\textbf{Master Géographies Numériques}\\
+    Université Jean Monnet, Saint Etienne (42),\\ 
+    Université Lyon 2, ENS, Lyon (69),  Depuis Septembre 2018\\
+    }%Spécialité Informatique
+    \cvItem{\textbf{Formation : "Transition de Delphi vers C++"}\\
+    Teclis Scientific, Tassin la Demi-Lune, 2017\\
+    Formation sur le langage C++, gestion de l'Unicode\\et des fichiers de format texte/binaire\\
+    Utilisation de la bibliothèque open source Inside Loop, \\Utilisation de CMake et Git}
+    \cvItem{\textbf{Formation : "C\#"}\\
+    Teclis Scientific, Tassin la Demi-Lune, Janvier 2013 -- Mars 2013\\
+    80 heures de formation au langage C\# et à l'environnement Microsoft Visual Studio}
+    \cvItem{\textbf{Licence Professionnelle "Informatique Embarquée et Mobile"}\\
+    IUT Lyon 1, Bourg-en-Bresse (01), Septembre 2010 -- Septembre 2011\\
+    Réalisée en alternance dans l'entreprise \textsc{Teclis}, Longessaigne (69)
+    }%Systèmes Informatiques et Logiciels -- Spécialité : Informatique Embarquée et Mobile
+    \cvItem{\textbf{Diplôme Universitaire de Technologie "Informatique"}\\
+    IUT Lyon 1, Villeurbanne (69), Septembre 2008 -- Juin 2010\\
+    }%Spécialité Informatique
+   % \cvItem{\textbf{Bac Scientifique, mention Assez Bien}\\
+    %Lycée Notre-Dame de Bel Air, Tarare (69), 2008\\
+    %Spécialité : Sciences de l'Ingénieur -- Option : Mathématiques}
+  \end{cvEducation}
+  
+  \begin{cvExperience}
+    \cvItem{\textbf{Mars 2019 -- Août 2019 : Développeur SIG (stage M1)}\\
+            \textsc{GiSmartware}, Limonest (69)\\
+	  	\begin{itemize}
+			\item[$\bullet$] Migration d'une application web de \textit{PHP5/MapServer 5.4} à \textit{PHP7/MapServer 7.4}
+%			\begin{itemize}
+%				\item[$-$] Développement d'un script Python pour la conversion des fichiers de configuration de MapServer utilisant la bibliothèque \textit{mappyfile}
+%				\item[$-$] Recherche et changement des appels à MapScript dans l'application pour la compatibilité avec MapServer 7.4
+%			\end{itemize}
+			\item[$\bullet$] Développement d'un outil d'export de fichiers SHP vers le format DGN avec la bibliothèque \textit{GDAL/OGR} et \textit{ogr2ogr}
+%			\item[$\bullet$] Développement d'un outil d'export de fichiers SHP vers le format DGN
+%			\begin{itemize}
+%				\item[$-$] Développement d'un script Python pour la manipulation des fichiers SHP avec la bibliothèque \textit{GDAL}
+%				\item[$-$] Utilisation d'\textit{ogr2ogr} avec le driver DGNv8 pour l'export
+%			\end{itemize}
+			\item[$\bullet$] Développement de plusieurs pages Web pour le choix d'un client cartographique
+			\begin{itemize}
+				\item[$-$] Utilisation des bibliothèques \textit{OpenLayers}, \textit{Leaflet} et \textit{Mapbox GL JS}
+				\item[$-$] Utilisation de \textit{Vector Tile}
+			\end{itemize}
+		\end{itemize}	
+	};
+	\cvItem{\textbf{Septembre 2011 -- Août 2018 : Développeur Informatique}\\
+		\textsc{\selectfont Teclis Scientific}, Tassin la Demi-Lune (69)\\
+		Développement et maintenance de logiciels avec Delphi. Interfaçage avec plusieurs types de matériels (cartes électroniques, caméras, ...).\\
+		\begin{itemize}
+			\item[$\bullet$] Développement de plusieurs solutions dans les logiciels de l'entreprise :
+			\begin{itemize}
+				\item[$-$] Développement de logiciels de pilotage d'appareils d'instrumentation caractérisant les mousses et les émulsions
+				\item[$-$] Acquisition d'images à partir de différentes caméras
+				\item[$-$] Acquisition de données à partir de cartes analogiques/numériques
+			\end{itemize}
+			\item[$\bullet$] Développement effectué avec Delphi 7, Delphi XE3, Delphi 10.1 Berlin, Microsoft Visual Studio 2015
+			\item[$\bullet$] Maintenance des logiciels et développement de nouvelles options respectant les besoins clients
+		\end{itemize}			
+	};
+    %\cvItem{Septembre 2010 -- Septembre 2011 : Licence Professionnelle \\"Informatique Embarquée et Mobile" en alternance\\
+    %        \textsc{IUT Lyon 1}, Bourg-en-Bresse (01) / \textsc{Teclis}, Longessaigne (69)\\
+    %        };
+    %\cvItem{\textbf{Avril 2010 -- Juin 2010 : Développeur (stage DUT)}\\
+    %        \textsc{Abas-France}, Rillieux-la-Pape (69)\\
+    %        Migration d'un logiciel FTP de C++ à Java.\\Développements complémentaires à la gestion de flux de produits.};
+  \end{cvExperience}
+  
+  \begin{cvSkills}
+    %\cvSkillThree{5}{Delphi}{4}{C\#}{3}{C++}
+    %\cvSkillThree{4}{SQL}{3}{Python}{3}{\LaTeX}
+    \cvSkillTwo{5}{Delphi}{4}{C\#}
+    \cvSkillTwo{4}{SQL}{3}{C++, Python, JavaScript}
+    \cvSkillTwo{3}{\LaTeX, \faGitSquare}{2}{PHP}
+    %\cvSkillTwo{3}{C, C++}{1}{Javascript}
+    %\cvSkillTwo{3}{HTML5/CSS}{3}{Bash}
+  \end{cvSkills}
+
+  \begin{cvSoftwares}
+    \cvSoftwareThree{ArcGIS}{QGIS}{MapServer}
+    \cvSoftwareThree{OpenLayers}{Leaflet}{Mapbox GL JS}
+    %\cvSoftwareThree{MapServer}{Adobe Illustrator}{InkScape}
+    %\cvSoftwareTwo{Microsoft Office}{Adobe Illustrator}
+    %\cvSoftware{}
+  \end{cvSoftwares}
+
+  %\begin{cvReferences}
+    %\cvAddReference{%
+      %name=Julie-Capucine Roussille,
+      %company=Teclis Scientific,
+      %position=Directrice Générale Adjointe,
+      %address line 1=,%46 Chemin du vieux moulin,
+      %address line 2=,%69160 Tassin la Demi-Lune,
+      %mobile phone=+33 6 27 68 58 05}% <<-- important!
+  %\end{cvReferences}
+%  \begin{cvReferences}
+%    \cvAddReference{%
+%      name=Jane Smith,
+%      company=Company ABC Co.\ Ltd.,
+%      position=Job title,
+%      address line 1=Street lane 2,
+%      address line 2=B-1150 Brussels,
+%      mobile phone=+1 781 555 1212}% <<-- important!
+%  \end{cvReferences}
+
+\end{cvMainContent}
+
+%\clearpage
+%
+%\begin{cvCoverLetter}
+%
+%\cvBeneficiary{%
+%  name=Jane Smith,
+%  position=Position,
+%  company=Company,
+%  address line 1=Address line 1,
+%  address line 2=Address line 2}
+%
+%Dear Miss.\ Smith
+%
+%\vspace{\baselineskip}
+%
+%\lipsum[1-8]
+%
+%\vspace{\cvMargin}
+%
+%\cvFullName
+%
+%\end{cvCoverLetter}
+
+\end{document}
